@@ -1,0 +1,148 @@
+/* Updated CSS styles */
+.h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #3e497a;
+}
+
+.txt {
+  font-size: 20px;
+}
+
+.outer-div {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.info-btn {
+  font-size: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  background-color: white;
+  border: none;
+  margin-left: auto;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.drag.disable {
+  background-color: grey !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.info-btn:hover + .hide {
+  margin-top: 30px;
+  display: block !important;
+  color: black;
+}
+
+.input-box {
+  width: 400px;
+  max-width: 100%;
+  padding: 12px;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+/* Switch styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "✖";
+  color: white;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: gray;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #D0BCFF;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  content: "✓";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: purple;
+  color: white;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.save-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 250px;
+  margin: 20px auto;
+  background-color: #8A4893;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.save-btn:hover {
+  background-color: #4b0a53d5;
+}
